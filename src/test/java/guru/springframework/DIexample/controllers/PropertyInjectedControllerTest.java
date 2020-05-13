@@ -1,7 +1,6 @@
 package guru.springframework.DIexample.controllers;
 
-import guru.springframework.DIexample.services.GreetingService;
-import guru.springframework.DIexample.services.GreetingServiceImpl;
+import guru.springframework.sfgdi.controllers.PropertyInjectedController;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -15,7 +14,7 @@ class PropertyInjectedControllerTest {
     void setUp() {
         controller = new PropertyInjectedController();
 
-        controller.greetingService = new GreetingServiceImpl();
+
     }
 
     @Test
